@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Video background styles */
+video.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+}
+
+h1, h3, h4 {
+    color: #343a40;
+}
+
+.form-group label {
+    color: #495057;
+}
+
+#expense-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item .expense-name {
+    font-weight: bold; /* Make the expense name bold */
+    color: black; /* Set the expense name color to black */
+}
+
+.badge {
+    font-size: 0.9em;
+    background-color: #007bff;
+}
+
+.btn {
+    margin-left: 10px;
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.form-control {
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+}
+
+.logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    min-height: 50px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.login-container, .register-container, .expense-tracker-form {
+    display: none;
+}
+
+.active {
+    display: block;
+}
